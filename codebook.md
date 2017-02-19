@@ -1,41 +1,85 @@
-## Code Book
-This code book summarizes the resulting data fields in final tidy dataset **data2_avg.txt**.
+## Codebook
+This code book summarizes the resulting data fields in final tidy dataset **tidydata.txt**. The columns for **tidydata.txt**
+includes **subjectID** (total 30 subjects), **activity_label** (total 6 activities), and 66 measure names. 
+The toal observation for **tidydata.txt** is 180 which is the combination (30x6=180) average per subject per activity for each measure.  
 
-### Identifier
-- subjectId: identifies the subject who performed the activity.
-- activitynames: derived from activitylabel.txt linked by activityId, the type of activities performed when the measures were taken.
+### subjectId
+- Identifies the subject who performed the activity, there are total 30 subjects (1:30).
 
-### Activity Labels
-- WALKING (value 1): subject was walking during the test
-- WALKING_UPSTAIRS (value 2): subject was walking up a staircase during the test
-- WALKING_DOWNSTAIRS (value 3): subject was walking down a staircase during the test
-- SITTING (value 4): subject was sitting during the test
-- STANDING (value 5): subject was standing during the test
-- LAYING (value 6): subject was laying down during the test
+### activity_label: total 6 level of activities as below
+- WALKING (1): subject was walking during the test
+- WALKING_UPSTAIRS (2): subject was walking up a staircase during the test
+- WALKING_DOWNSTAIRS (3): subject was walking down a staircase during the test
+- SITTING (4): subject was sitting during the test
+- STANDING (5): subject was standing during the test
+- LAYING (6): subject was laying down during the test
 
-### Measurements
-- tGravityAccMeanX
-- tGravityAccMeanY
-- tGravityAccMeanZ
-- tGravityAccStdX
-- tGravityAccStdY
-- tGravityAccStdZ
-- tBodyAccJerkMeanX
-- tBodyAccJerkMeanY
-- tBodyAccJerkMeanZ
-- tBodyAccJerkStdX
-- tBodyAccJerkStdY
-- tBodyAccJerkStdZ
-- tBodyGyroMeanX
-- tBodyGyroMeanY
-- tBodyGyroMeanZ
-- tBodyGyroStdX
-- tBodyGyroStdY
-- tBodyGyroStdZ
-- tBodyGyroJerkMeanX
-- tBodyGyroJerkMeanY
-- tBodyAccMagMean
-- tBodyAccMagStd
-- tGravityAccMagMean
-- tGravityAccMagStd
-- ...
+### 66 measure names
+- tBodyAcc-mean()-X
+- tBodyAcc-mean()-Y
+- tBodyAcc-mean()-Z
+- tBodyAcc-std()-X
+- tBodyAcc-std()-Y
+- tBodyAcc-std()-Z
+- tGravityAcc-mean()-X
+- tGravityAcc-mean()-Y
+- tGravityAcc-mean()-Z
+- tGravityAcc-std()-X
+- tGravityAcc-std()-Y
+- tGravityAcc-std()-Z
+- tBodyAccJerk-mean()-X
+- tBodyAccJerk-mean()-Y
+- tBodyAccJerk-mean()-Z
+- tBodyAccJerk-std()-X
+- tBodyAccJerk-std()-Y
+- tBodyAccJerk-std()-Z
+- tBodyGyro-mean()-X
+- tBodyGyro-mean()-Y
+- tBodyGyro-mean()-Z
+- tBodyGyro-std()-X
+- tBodyGyro-std()-Y
+- tBodyGyro-std()-Z
+- tBodyGyroJerk-mean()-X
+- tBodyGyroJerk-mean()-Y
+- tBodyGyroJerk-mean()-Z
+- tBodyGyroJerk-std()-X
+- tBodyGyroJerk-std()-Y
+- tBodyGyroJerk-std()-Z
+- tBodyAccMag-mean()
+- tBodyAccMag-std()
+- tGravityAccMag-mean()
+- tGravityAccMag-std()
+- tBodyAccJerkMag-mean()
+- tBodyAccJerkMag-std()
+- tBodyGyroMag-mean()
+- tBodyGyroMag-std()
+- tBodyGyroJerkMag-mean()
+- tBodyGyroJerkMag-std()
+- fBodyAcc-mean()-X
+- fBodyAcc-mean()-Y
+- fBodyAcc-mean()-Z
+- fBodyAcc-std()-X
+- fBodyAcc-std()-Y
+- fBodyAcc-std()-Z
+- fBodyAccJerk-mean()-X
+- fBodyAccJerk-mean()-Y
+- fBodyAccJerk-mean()-Z
+- fBodyAccJerk-std()-X
+- fBodyAccJerk-std()-Y
+- fBodyAccJerk-std()-Z
+- fBodyGyro-mean()-X
+- fBodyGyro-mean()-Y
+- fBodyGyro-mean()-Z
+- fBodyGyro-std()-X
+- fBodyGyro-std()-Y
+- fBodyGyro-std()-Z
+- fBodyAccMag-mean()
+- fBodyAccMag-std()
+- fBodyBodyAccJerkMag-mean()
+- fBodyBodyAccJerkMag-std()
+- fBodyBodyGyroMag-mean()
+- fBodyBodyGyroMag-std()
+- fBodyBodyGyroJerkMag-mean()
+- fBodyBodyGyroJerkMag-std()
+
+
